@@ -11,6 +11,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var showinput: UILabel!
+    @IBOutlet weak var chkbtn: UIButton!
+    
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,6 +28,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func chkbtnact(_ sender: UIButton) {
+        showinput.text = text1.text;
+    }
 
 }
 
